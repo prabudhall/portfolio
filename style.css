@@ -2,6 +2,9 @@
   background-color: rgb(27,27,39);
   color: white;
 }
+body{
+  background-color: RGB(238 254 255);
+}
 
 nav{
   padding: 30px 18%;
@@ -104,6 +107,7 @@ nav{
   padding: 15px;
   margin-bottom: 70px;
   margin-top: 200px;
+  text-align: justify;
 }
 .about .text{
   justify-content: center;
@@ -149,6 +153,66 @@ nav{
 }
 .about .lt{
   margin-top: 4.5px;
+}
+@media only screen and (max-width: 1200px) {
+  .about{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    padding: 15px;
+    margin-bottom: 70px;
+    margin-top: 200px;
+    /* text-align: justify; */
+  }
+  .about .text{
+    justify-content: center;
+    font-size: 300%;
+    font-weight: bold;
+    padding-top: 10px;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #FF6600;
+  }
+  .about .box{
+    display: block;
+    margin: 7% 15% 0% 19%;
+    height: 60%;
+    width: 60%;
+  }
+  .about .box .img{
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .about .box .img img{
+    object-fit: fill;
+    border-radius: 30px;
+    box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
+  }
+  .about .box .boxText{
+    font-size: 23px;
+    /* margin-left: 100px; */
+    margin: 0px;
+    padding: 0px;
+    margin-top: 40px;
+  }
+  .about .box .logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: -70px;
+  }
+  .about .box .logo .lg{
+    max-width: 30px;
+    max-height: 30px;
+    padding: 10px;
+  }
+  .about .box .logo .lg a{
+    object-fit: contain;
+  }
+  .about .lt{
+    margin-top: 4.5px;
+  }
 }
 
 
