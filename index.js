@@ -15,7 +15,7 @@ function handle(){
   }
   // alert("Submitting the data");
 
-  emailjs.send(process.env.SERVICE, process.env.TEMPLATE, params)
+  emailjs.send("service_pmjxrkr", "template_q0jd92p", params)
     .then(function(response) {
       document.getElementById("name").value = "";
       document.getElementById("subject").value = "";
