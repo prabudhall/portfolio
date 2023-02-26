@@ -5,6 +5,16 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Prabudh</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init(process.env.KEY);
+       })();
+    </script>
+
   </head>
   <body>
     <div class="">
@@ -74,7 +84,7 @@
 
       <div class="proj" id="proj">
         <div class="text">
-          Projects
+          <h1>Projects</h1> <h5>&nbsp;{Links inside pic}</h5>
         </div>
 
         <div class="p1 pronum">
@@ -203,13 +213,13 @@
         <div class="form">
           <form class="fm" action="#" method="post">
             <p class="bxtxt">Name</p>
-            <input type="text" name="name" placeholder="Name">
+            <input type="text" id="name" placeholder="Name" >
             <p class="bxtxt">Subject</p>
-            <input type="text" name="subject" placeholder="Subject">
+            <input type="text" id="subject" placeholder="Subject" >
             <p class="bxtxt">Message</p>
-            <textarea name="message" rows="8" cols="60" placeholder="Message"></textarea>
+            <textarea id="message" rows="8" cols="60" placeholder="Message" ></textarea>
             <div class="subbtn">
-              <button type="button" name="submit">Submit</button>
+              <button type="button" name="submit" onclick="handle()">Submit</button>
             </div>
           </form>
         </div>
@@ -228,5 +238,6 @@
       </div>
 
     </div>
+    <script src="index.js" ></script>
   </body>
 </html>

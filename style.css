@@ -223,13 +223,24 @@ nav{
 }
 .proj .text{
   justify-content: center;
-  font-size: 48px;
-  font-weight: bold;
+  padding-left: 2%;
+  display: flex;
   padding-top: 10px;
   padding-bottom: 45px;
+}
+.proj .text h1{
+  font-size: 48px;
+  font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #FF6600;
+}
+.proj .text h5{
+  font-size: 17px;
+  padding-top: 35px;
+  padding-left: 5px;
+  align-items: baseline;
+  text-decoration: none;
 }
 .proj .p1, .proj .p3, .proj .p5, .proj .p7{
   display: flex;
@@ -367,6 +378,7 @@ text-align: center;
   border-radius: 25px;
   border: 1px;
   font-size: 18px;
+  cursor: pointer;
   transition: ease 0.5s;
 }
 .contact .subbtn button:hover{
